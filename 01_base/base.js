@@ -11,19 +11,19 @@ console.log(`Value: ${333}!!!`);        // interpolation
 let empty;              // undefined
 let nullObject = null;  // null
 
-let number = 44.2;
-let email = "super@ukr.net"; // '' == ""
-let flag = true;
-let array = [1, 2, 3];
+let number = 44.2;          // number
+let email = "bla@ukr.net";  // string
+let flag = true;            // boolean
+let array = [1, 2, 3];      // object
 let summ = function (a, b) { console.log(`Summ: ${a} + ${b} = ${a + b}`); }
 
-console.log(`Empty = ${empty}, type: ${typeof(empty)}`);
-console.log(`Null object = ${nullObject}, type: ${typeof(nullObject)}`);
-console.log(`Number = ${number}, type: ${typeof(number)}`);
-console.log(`Email = ${email}, type: ${typeof(email)}`);
-console.log(`Flag = ${flag}, type: ${typeof(flag)}`);
-console.log(`Array = ${array}, type: ${typeof(array)}`);
-console.log(`Func = ${summ}, type: ${typeof(summ)}`);
+console.log(`Empty = ${empty}, type: ${typeof (empty)}`);
+console.log(`Null object = ${nullObject}, type: ${typeof (nullObject)}`);
+console.log(`Number = ${number}, type: ${typeof (number)}`);
+console.log(`Email = ${email}, type: ${typeof (email)}`);
+console.log(`Flag = ${flag}, type: ${typeof (flag)}`);
+console.log(`Array = ${array}, type: ${typeof (array)}`);
+console.log(`Func = ${summ}, type: ${typeof (summ)}`);
 
 // invoke function
 summ(4, 7);
@@ -32,7 +32,7 @@ summ(4, 7);
 
 number = "hello"; //change type from number to string
 
-let mixed = [40, 4.4, "red", "green", false, [1,2,3], summ];
+let mixed = [40, 4.4, "red", "green", false, [1, 2, 3], summ];
 
 console.log(mixed[5][2]); // 3
 
@@ -49,21 +49,21 @@ numbers[7] = 200; // new item
 numbers[20] = 5;  // empty cells from [8]...[19]
 
 // get all array values
-// for (const item of numbers) {
-//     console.log(item);
-// }
+for (const item of numbers) {
+    console.log(item);
+}
 
 // get all array indexes
-// for (const index in numbers) {
-//     console.log(index);
-// }
+for (const index in numbers) {
+    console.log(index);
+}
 
 console.log("Array count: " + numbers.length);
 
 // ---------- conditions ----------
 let message = (3 > 2) ? "bigger" : "less";
 
-if (5 > 4) 
+if (5 > 4)
     console.log("True");
 else
     console.log("False");
@@ -81,7 +81,7 @@ function divide(a, b) {
         console.error("Cannot divide by zero!");
         return;
     }
-    return a + b;
+    return a / b;
 }
 
 // ---------- browser dialogs ----------
@@ -94,6 +94,6 @@ let numB = +prompt("Enter your number B:");
 // "first" + "second" = "firstsecond";
 // "100" + "10" = "10010";
 
-console.log(typeof(numA)); // number
+console.log(typeof (numA)); // number
 
 alert("Result: " + divide(numA, numB));
