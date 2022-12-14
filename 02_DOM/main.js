@@ -45,3 +45,35 @@ function addProductToTable(product) {
                                 <td>${product.price}$</td>
                             </tr>`
 }
+
+const themeBtn = document.getElementById('theme-btn');
+const nav = document.getElementById('navbar');
+
+themeBtn.onclick = () => {
+    console.log("Theme button clicked!");
+
+    if (themeBtn.innerHTML == 'Dark') {
+
+        // delete dark classes
+        nav.classList.remove('navbar-light');
+        nav.classList.remove('bg-light');
+
+        // add light classes
+        nav.classList.add('navbar-dark');
+        nav.classList.add('bg-primary');
+
+        themeBtn.innerHTML = "Light";
+    }
+    else {
+
+        // delete dark classes
+        nav.classList.remove('navbar-dark');
+        nav.classList.remove('bg-primary');
+
+        // add light classes
+        nav.classList.add('navbar-light');
+        nav.classList.add('bg-light');
+
+        themeBtn.innerHTML = "Dark";
+    }
+}

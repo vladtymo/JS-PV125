@@ -7,10 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
     <link rel="stylesheet" href="./bootstrap.css">
+    <style>
+        nav {
+            transition: all .3s;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
@@ -44,11 +49,15 @@
                             <a class="dropdown-item" href="#">Separated link</a>
                         </div>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="theme-btn">Light</button>
+                    </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-sm-2" type="search" placeholder="Search">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                 </form>
+
             </div>
         </div>
     </nav>
@@ -90,6 +99,7 @@
         </table>
         <button id="delete-btn" type="button" class="btn btn-danger mt-3">Delete All</button>
     </div>
+    <hr>
 
     <script src="./main.js"></script>
 
