@@ -4,6 +4,7 @@ const privateExchangeApi = 'https://api.privatbank.ua/p24api/pubinfo?json&exchan
 const monoKurs = 'https://api.monobank.ua/bank/currency'
 const gismeteoApi = 'https://api.gismeteo.net/v2/weather/current/4398/';
 
+// asynchronius: async + await
 async function showApiResult(api) {
     const response = await fetch(api);
     console.log("Response Status: " + response.status);

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "login": "super3423",
+        "email": "gotler@gmail.com",
+        "followings": 43,
+        "followers": 10,
+        "type": "Organization"
+    },
+    {
+        "id": 2,
+        "login": "bobraegaHIUhfe84",
+        "email": "nbnnbnb@gmail.com",
+        "followings": 45,
+        "followers": 6,
+        "type": "User"
+    },
+    {
+        "id": 3,
+        "login": "bvbuuuebiguy",
+        "email": "popolku@gmail.com",
+        "followings": 78,
+        "followers": 100,
+        "type": "Admin"
+    }
+]
