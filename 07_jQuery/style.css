@@ -18,8 +18,7 @@ body {
 }
 
 #color-list li:hover {
-    /* background-color: rgb(201, 201, 201); */
-    /* color: black; */
+    background-color: rgb(87, 87, 87);
     cursor: pointer;
 }
 

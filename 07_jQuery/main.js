@@ -28,9 +28,19 @@ $('#add-btn').on('click', (e) => {
         });
 
     $('#color-list').append($newItem);
-})
+});
 
 $('#clear-btn').click((e) => {
     e.preventDefault();
     $('#color-list').empty();
-})
+});
+
+$('#color-list li').on('click', function () {
+    // alert("Clicked!");
+
+    $(this).toggleClass('styled-item');
+    $(this).append('!');
+
+    console.log('Previous: ' + $(this).prev().text());
+    console.log('Next: ' + $(this).next().text());
+});
