@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#color-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#color-list li {
+    background-color: rgb(116, 116, 116);
+    color: white;
+    border-radius: 5px;
+    width: 300px;
+    margin-bottom: 8px;
+    padding: 10px;
+}
+
+#color-list li:hover {
+    /* background-color: rgb(201, 201, 201); */
+    /* color: black; */
+    cursor: pointer;
+}
+
+#color-list li.styled-item {
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+}
