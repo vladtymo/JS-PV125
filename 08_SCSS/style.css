@@ -1,0 +1,48 @@
+h1 {
+  font-family: Arial, sans-serif;
+}
+
+button {
+  font-family: Arial, sans-serif;
+}
+
+.success {
+  border-radius: 8px;
+  background-color: darkgreen;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px;
+  min-width: 100px;
+}
+.success:hover {
+  opacity: 0.5;
+}
+
+.exit {
+  border-radius: 8px;
+  background-color: darkgray;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px;
+  min-width: 100px;
+}
+.exit:hover {
+  opacity: 0.5;
+}
+
+.danger {
+  border-radius: 8px;
+  background-color: darkred;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px;
+  min-width: 100px;
+}
+.danger:hover {
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+$font: Arial, sans-serif;
+
+h1 {
+    font-family: $font;
+}
+
+button {
+    font-family: $font;
+}
+
+@mixin my-btn($background: darkgray) {
+    border-radius: 8px;
+    background-color: $background;
+    font-family: $font;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 15px;
+    min-width: 100px;
+    &:hover {
+        opacity: .5;
+    }
+}
+
+.success {
+    @include my-btn(darkgreen);
+}
+.exit {
+    @include my-btn;
+}
+.danger {
+    @include my-btn(darkred);
+}
